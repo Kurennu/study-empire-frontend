@@ -1,0 +1,26 @@
+@use '../helpers' as *;
+
+.button{
+  display: inline-flex;
+  justify-content: center;
+  color: var(--color-light);
+  font-size: rem(16);
+  font-weight: 600;
+  padding-block: rem(12);
+  width: 100%;
+  white-space: nowrap;
+  background-color: var(--color-red);
+  border-radius: rem(24);
+  border: none;
+
+  @include mobile-above{
+    font-size: rem(18);
+    width: auto;
+    padding: rem(16) rem(32);
+  }
+
+  @include hover{
+    background-color: var(--color-dark-red);
+    transition-duration: var(--transition-duration);
+  }
+}

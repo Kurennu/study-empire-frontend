@@ -5,10 +5,79 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/main.css">
-    <title>Document</title>
+    <title>Учебная империя | Главная</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/main.js" type="module" defer></script>
 </head>
 <body>
+<header class="header" data-js-header>
+    <div class="header__body container">
+        <div class="header__body-inner">
+            <a
+                    href="/"
+                    class="header__logo logo"
+                    aria-label="На главную"
+                    title="На главную"
+            >
+                <img
+                        src="./images/logo.svg"
+                        alt="Учебная империя"
+                        class="header__logo"
+                        width="237" height="52"
+                >
+            </a>
+            <div class="header__overlay" data-js-header-overlay>
+                    <nav class="header__menu">
+                        <a href="tel:89147043666" class="header__contact-link header__contact-link--icon visible-mobile">
+                            +7 (914) 704-36-66
+                        </a>
 
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link">Курсы</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link is-active">Цены</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link">Акции</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link">Отзывы</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link">О нас</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <a href="tel:89147043666" class="header__contact-link hidden-mobile">
+                        +7 (914) 704-36-66
+                    </a>
+                <button
+                        class="header__overlay-button button visible-mobile"
+                        type="button"
+                        aria-label="Записаться"
+                        title="Записаться"
+                >
+                    Записаться
+                </button>
+            </div>
+            <button
+                    class="header__burger-button burger-button visible-mobile"
+                    type="button"
+                    aria-label="Open menu"
+                    title="Open menu"
+                    data-js-header-burger-button
+            >
+                <span class="burger-button__line"></span>
+                <span class="burger-button__line"></span>
+                <span class="burger-button__line"></span>
+            </button>
+        </div>
+    </div>
+</header>
+<main>
+</main>
 </body>
 </html>
