@@ -151,26 +151,6 @@ label {
 }
 
 /**
-  Приводим к единому цвету svg-элементы
-  (за исключением тех, у которых уже указан
-  атрибут fill со значением 'none' или начинается с 'url')
- */
-:where([fill]:not([fill=none],
-[fill^=url])) {
-  fill: currentColor;
-}
-
-/**
-  Приводим к единому цвету svg-элементы
-  (за исключением тех, у которых уже указан
-  атрибут stroke со значением 'none')
- */
-:where([stroke]:not([stroke=none],
-[stroke^=url])) {
-  stroke: currentColor;
-}
-
-/**
   Чиним баг задержки смены цвета при взаимодействии с svg-элементами
  */
 svg * {
@@ -207,21 +187,21 @@ svg * {
   font-display: swap;
 }
 @font-face {
-  font-family: "Kumbh Sans";
+  font-family: "Eastman";
   src: url("../fonts/Eastman-Medium.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Kumbh Sans";
+  font-family: "Eastman";
   src: url("../fonts/Eastman-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Kumbh Sans";
+  font-family: "Eastman";
   src: url("../fonts/Eastman-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
@@ -529,6 +509,25 @@ button[aria-label]::before {
   border-radius: 1.5rem;
   border: none;
 }
+.button--white {
+  color: var(--color-dark);
+  background-color: var(--color-baige) !important;
+  border: 0.0625rem solid var(--color-gray);
+}
+@media (any-hover: hover) {
+  .button--white:hover {
+    border: 0.0625rem solid var(--color-dark);
+    background-color: var(--color-baige);
+    transition-duration: var(--transition-duration);
+  }
+}
+@media (any-hover: none) {
+  .button--white:active {
+    border: 0.0625rem solid var(--color-dark);
+    background-color: var(--color-baige);
+    transition-duration: var(--transition-duration);
+  }
+}
 @media (width > 48.06125rem) {
   .button {
     font-size: 1.125rem;
@@ -547,6 +546,163 @@ button[aria-label]::before {
     background-color: var(--color-dark-red);
     transition-duration: var(--transition-duration);
   }
+}
+
+.hero {
+  background-color: var(--color-baige);
+}
+.hero__main {
+  padding-block: 5rem;
+  display: grid;
+  grid-template-columns: 56% auto;
+  gap: 1rem;
+  align-items: center;
+  background: url("../../images/hero-bg.png") right no-repeat;
+}
+@media (width <= 63.99875rem) {
+  .hero__main {
+    padding-block: 1.5rem;
+  }
+}
+@media (width <= 48.06125rem) {
+  .hero__main {
+    background-size: contain;
+    grid-template-columns: 1fr;
+  }
+}
+.hero__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+@media (width <= 48.06125rem) {
+  .hero__body {
+    display: contents;
+  }
+}
+.hero__header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: flex-start;
+}
+@media (width <= 48.06125rem) {
+  .hero__header {
+    row-gap: 0.75rem;
+    order: 1;
+  }
+}
+.hero__subtitle {
+  display: inline-flex;
+  column-gap: 0.5rem;
+  background-color: var(--color-accent-baige);
+  padding-block: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 1.25rem;
+  font-size: clamp(0.75rem, 0.7181372549rem + 0.1307189542vw, 0.875rem);
+  font-weight: 400;
+  border-radius: 4.5rem;
+}
+@media (width <= 63.99875rem) {
+  .hero__subtitle {
+    padding-block: 0.625rem;
+    padding-left: 1.5rem;
+    padding-right: 2.25rem;
+  }
+}
+.hero__title {
+  font-size: 2.625rem;
+  font-weight: 900;
+  line-height: 124%;
+}
+@media (width <= 63.99875rem) {
+  .hero__title {
+    font-size: 1.875rem;
+  }
+}
+@media (width <= 30.06125rem) {
+  .hero__title {
+    font-size: 1.125rem;
+  }
+}
+.hero__title span {
+  position: relative;
+}
+.hero__title span::after {
+  content: "";
+  position: absolute;
+  background: url("../../images/red-line.svg");
+  width: 14.25rem;
+  height: 1.3125rem;
+  top: 85%;
+  right: -10%;
+}
+@media (width <= 63.99875rem) {
+  .hero__title span::after {
+    transform: scale(0.8);
+    transform-origin: right center;
+    top: 80%;
+    right: -20%;
+  }
+}
+@media (width <= 30.06125rem) {
+  .hero__title span::after {
+    transform: scale(0.35);
+    transform-origin: right center;
+    top: 65%;
+    right: -5%;
+  }
+}
+.hero__description {
+  font-size: clamp(0.875rem, 0.8112745098rem + 0.2614379085vw, 1.125rem);
+}
+@media (width > 48.06125rem) {
+  .hero__description {
+    width: 70%;
+  }
+}
+@media (width <= 63.99875rem) {
+  .hero__image {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (width <= 48.06125rem) {
+  .hero__image {
+    order: 2;
+  }
+  .hero__image img {
+    width: 70%;
+    height: auto;
+  }
+}
+@media (width <= 30.06125rem) {
+  .hero__image img {
+    width: 100%;
+  }
+}
+.hero__promo {
+  display: grid;
+  row-gap: 1rem;
+}
+@media (width <= 48.06125rem) {
+  .hero__promo {
+    order: 3;
+  }
+}
+.hero__actions {
+  display: flex;
+  column-gap: 1rem;
+}
+@media (width <= 30.06125rem) {
+  .hero__actions {
+    flex-direction: column;
+    row-gap: 0.75rem;
+  }
+}
+.hero__item::before {
+  content: "•";
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
