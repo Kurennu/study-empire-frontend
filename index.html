@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Учебная империя | Главная</title>
     <link rel="stylesheet" href="./styles/main.css">
-    <script src="./scripts/main.js" type="module" defer></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
 <header class="header" data-js-header>
@@ -106,8 +108,8 @@
                         <button
                                 type="button"
                                 class="button--white button"
-                                aria-label="Записаться"
-                                title="Записаться"
+                                aria-label="Смотреть отзывы"
+                                title="Смотреть отзывы"
                         >
                             Смотреть отзывы
                         </button>
@@ -126,7 +128,7 @@
             </div>
             <div class="hero__image">
                 <img
-                    src="./images/hero-image.png"
+                    src="./images/hero/hero-image.png"
                     alt=""
                     class="header__logo"
                     width="504" height="415" loading="lazy"
@@ -134,6 +136,1089 @@
             </div>
         </div>
     </section>
+    <section class="features">
+        <div class="features__wrapper container">
+            <div class="features__inner">
+            <div class="features__photo">
+                <img
+                        src="./images/features/students.png"
+                        alt="Фото учеников"
+                        class="features__img"
+                        width="565" height="479" loading="lazy"
+                >
+            </div>
+            <div class="features__body">
+                    <div class="features__main">
+                    <h2 class="features__header">Почему выбирают <span>нас?</span></h2>
+                    <p class="features__info">Наши преподаватели - молодые выпускники профильных ВУЗов, победители региональных олимпиад с результатами ЕГЭ выше 90 баллов.</p>
+                    <p class="features__info">Программа обучения разрабатывается индивидуально и соответствует требованиям ФГОС.</p>
+                    <div class="features__metrics">
+                        <dl class="features__metrics-list">
+                            <div class="features__metrics-item">
+                                <dt class="features__metrics-key">2 000 м2 +</dt>
+                                <dd class="features__metrics-value">Образовательного пространства</dd>
+                            </div>
+                            <div class="features__metrics-item">
+                                <dt class="features__metrics-key">5+</dt>
+                                <dd class="features__metrics-value">Филиалов</dd>
+                            </div>
+                            <div class="features__metrics-item">
+                                <dt class="features__metrics-key">100+</dt>
+                                <dd class="features__metrics-value">Кабинетов</dd>
+                            </div>
+                            <div class="features__metrics-item">
+                                <dt class="features__metrics-key">10+</dt>
+                                <dd class="features__metrics-value">Лет на рынке</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                </div>
+                <div class="features__reviews">
+                    <p class="features__reviews-info">Что говорят родители и ученики?</p>
+                    <div class="features__reviews-buttons">
+                        <button
+                                type="button"
+                                class="review-button"
+                                aria-label="Отзывы на VLru"
+                                title="Отзывы на VLru"
+                        >
+                            <img
+                                    src="./images/features/vl.png"
+                                    alt=""
+                                    class="review-button__img"
+                                    width="28" height="28" loading="lazy"
+                            >
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.3039 7.97177L13.7882 11.0054L14.8593 15.5421C14.9184 15.7884 14.9032 16.0466 14.8156 16.2843C14.728 16.5219 14.5719 16.7282 14.3671 16.8772C14.1623 17.0262 13.9179 17.1111 13.6648 17.1213C13.4118 17.1314 13.1614 17.0664 12.9453 16.9343L8.99995 14.5061L5.05229 16.9343C4.83622 17.0656 4.58613 17.13 4.3335 17.1195C4.08087 17.109 3.837 17.0239 3.63261 16.8751C3.42822 16.7262 3.27243 16.5202 3.18488 16.283C3.09732 16.0458 3.08191 15.788 3.14058 15.5421L4.21558 11.0054L0.699951 7.97177C0.508778 7.80654 0.370518 7.58866 0.302438 7.34532C0.234358 7.10198 0.239475 6.84398 0.317151 6.60354C0.394826 6.3631 0.541618 6.15086 0.739193 5.99335C0.936768 5.83583 1.17637 5.74001 1.42808 5.71786L6.03745 5.34599L7.81557 1.04286C7.91182 0.808343 8.07563 0.607742 8.28618 0.466562C8.49672 0.325382 8.7445 0.25 8.998 0.25C9.2515 0.25 9.49927 0.325382 9.70982 0.466562C9.92036 0.607742 10.0842 0.808343 10.1804 1.04286L11.9578 5.34599L16.5671 5.71786C16.8193 5.73919 17.0596 5.83447 17.2579 5.99177C17.4562 6.14907 17.6037 6.36139 17.6819 6.60212C17.76 6.84286 17.7654 7.10131 17.6973 7.34509C17.6292 7.58887 17.4907 7.80714 17.2992 7.97255L17.3039 7.97177Z" fill="#F9CB2D"/>
+                            </svg>
+                            <span>4.0</span>
+                        </button>
+                        <button
+                                type="button"
+                                class="review-button"
+                                aria-label="Отзывы на 2ГИС"
+                                title="Отзывы на 2ГИС"
+                        >
+                            <img
+                                    src="./images/features/2gis.png"
+                                    alt=""
+                                    class="review-button__img"
+                                    width="28" height="28" loading="lazy"
+                            >
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.3039 7.97177L13.7882 11.0054L14.8593 15.5421C14.9184 15.7884 14.9032 16.0466 14.8156 16.2843C14.728 16.5219 14.5719 16.7282 14.3671 16.8772C14.1623 17.0262 13.9179 17.1111 13.6648 17.1213C13.4118 17.1314 13.1614 17.0664 12.9453 16.9343L8.99995 14.5061L5.05229 16.9343C4.83622 17.0656 4.58613 17.13 4.3335 17.1195C4.08087 17.109 3.837 17.0239 3.63261 16.8751C3.42822 16.7262 3.27243 16.5202 3.18488 16.283C3.09732 16.0458 3.08191 15.788 3.14058 15.5421L4.21558 11.0054L0.699951 7.97177C0.508778 7.80654 0.370518 7.58866 0.302438 7.34532C0.234358 7.10198 0.239475 6.84398 0.317151 6.60354C0.394826 6.3631 0.541618 6.15086 0.739193 5.99335C0.936768 5.83583 1.17637 5.74001 1.42808 5.71786L6.03745 5.34599L7.81557 1.04286C7.91182 0.808343 8.07563 0.607742 8.28618 0.466562C8.49672 0.325382 8.7445 0.25 8.998 0.25C9.2515 0.25 9.49927 0.325382 9.70982 0.466562C9.92036 0.607742 10.0842 0.808343 10.1804 1.04286L11.9578 5.34599L16.5671 5.71786C16.8193 5.73919 17.0596 5.83447 17.2579 5.99177C17.4562 6.14907 17.6037 6.36139 17.6819 6.60212C17.76 6.84286 17.7654 7.10131 17.6973 7.34509C17.6292 7.58887 17.4907 7.80714 17.2992 7.97255L17.3039 7.97177Z" fill="#F9CB2D"/>
+                            </svg>
+                            <span>4.9</span>
+                        </button>
+                        <button
+                                type="button"
+                                class="review-button"
+                                aria-label="Отзывы на Яндекс"
+                                title="Отзывы на Яндекс"
+                        >
+                            <img
+                                    src="./images/features/yandex.png"
+                                    alt=""
+                                    class="review-button__img"
+                                    width="28" height="28" loading="lazy"
+                            >
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.3039 7.97177L13.7882 11.0054L14.8593 15.5421C14.9184 15.7884 14.9032 16.0466 14.8156 16.2843C14.728 16.5219 14.5719 16.7282 14.3671 16.8772C14.1623 17.0262 13.9179 17.1111 13.6648 17.1213C13.4118 17.1314 13.1614 17.0664 12.9453 16.9343L8.99995 14.5061L5.05229 16.9343C4.83622 17.0656 4.58613 17.13 4.3335 17.1195C4.08087 17.109 3.837 17.0239 3.63261 16.8751C3.42822 16.7262 3.27243 16.5202 3.18488 16.283C3.09732 16.0458 3.08191 15.788 3.14058 15.5421L4.21558 11.0054L0.699951 7.97177C0.508778 7.80654 0.370518 7.58866 0.302438 7.34532C0.234358 7.10198 0.239475 6.84398 0.317151 6.60354C0.394826 6.3631 0.541618 6.15086 0.739193 5.99335C0.936768 5.83583 1.17637 5.74001 1.42808 5.71786L6.03745 5.34599L7.81557 1.04286C7.91182 0.808343 8.07563 0.607742 8.28618 0.466562C8.49672 0.325382 8.7445 0.25 8.998 0.25C9.2515 0.25 9.49927 0.325382 9.70982 0.466562C9.92036 0.607742 10.0842 0.808343 10.1804 1.04286L11.9578 5.34599L16.5671 5.71786C16.8193 5.73919 17.0596 5.83447 17.2579 5.99177C17.4562 6.14907 17.6037 6.36139 17.6819 6.60212C17.76 6.84286 17.7654 7.10131 17.6973 7.34509C17.6292 7.58887 17.4907 7.80714 17.2992 7.97255L17.3039 7.97177Z" fill="#F9CB2D"/>
+                            </svg>
+                            <span>4.9</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="features__extra">
+                    <div class="contact">
+                        <button
+                                type="button"
+                                class="button"
+                                aria-label="Записаться"
+                                title="Записаться"
+                        >
+                            Записаться
+                        </button>
+                        <button
+                                type="button"
+                                class="contact__button"
+                                aria-label="Whatsapp"
+                                title="Whatsapp"
+                        >
+                            <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.329672 27.3709C0.178836 27.2873 0.0655384 27.0969 0.0629899 26.9228C0.0619652 26.8528 0.539406 25.555 1.12397 24.0388L2.18681 21.282L2.01501 20.9859C1.69897 20.4412 1.06904 19.1186 0.872599 18.5873C0.622425 17.9106 0.308415 16.6573 0.187771 15.8539C0.0706529 15.0741 0.0524362 13.0543 0.156006 12.3321C0.602317 9.22013 1.89007 6.59191 4.00509 4.47641C6.11792 2.36311 8.77948 1.05482 11.8328 0.628738C12.489 0.537166 14.5399 0.537166 15.1961 0.628738C19.128 1.17743 22.4714 3.23443 24.6498 6.44499C25.8041 8.14613 26.5074 9.97307 26.8455 12.1482C26.9633 12.9063 26.9777 14.974 26.8702 15.6962C26.4132 18.7668 25.0855 21.4538 23.0015 23.5257C19.7517 26.7565 15.1275 28.0993 10.5978 27.1274C9.45016 26.8812 7.7283 26.1978 6.65641 25.563L6.39365 25.4074L3.55584 26.4235C1.99504 26.9823 0.658907 27.4398 0.586647 27.4401C0.514389 27.4403 0.398749 27.4092 0.329672 27.3709Z" fill="#25D366"/>
+                                <path d="M19.0015 19.4778C18.604 19.8707 18.1972 20.1215 17.6522 20.3095C17.1425 20.4853 16.2317 20.532 15.6905 20.4101C14.4294 20.1259 12.4983 19.1245 10.8459 17.8977C9.2845 16.7385 7.94025 15.0538 6.82111 12.8536C5.95267 11.1463 5.72223 10.0573 5.99973 8.97205C6.30483 7.77885 7.24573 6.79377 8.40615 6.45264C8.61689 6.39069 8.92959 6.36523 9.47992 6.36523C10.1875 6.36523 10.2694 6.3755 10.4035 6.48101C10.4966 6.55424 10.7957 7.0824 11.2176 7.91831L11.8845 9.23982L11.8826 9.70523C11.881 10.1213 11.8603 10.2142 11.6879 10.5814C11.5819 10.8073 11.3322 11.194 11.133 11.4408L10.7709 11.8894L11.0278 12.4017C11.6957 13.7336 12.6808 14.7069 14.0442 15.3817L14.5058 15.6102L14.8195 15.327C15.4817 14.7292 16.141 14.4419 16.758 14.4822C17.1173 14.5056 17.2231 14.5483 18.455 15.1661C19.1776 15.5285 19.8181 15.8797 19.8783 15.9465C19.9749 16.0536 19.9898 16.1595 20.0054 16.8486C20.0217 17.5732 20.0126 17.6603 19.8782 18.0608C19.6888 18.625 19.4126 19.0715 19.0015 19.4778Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="" class="features__extra-text">Образцы документов</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="quiz">
+        <div class="quiz__wrapper container">
+            <div class="quiz__body">
+                <h2 class="quiz__title">Пройдите опрос и получите скидку 2 000 ₽</h2>
+                <p class="quiz__subtitle">По какому предмету испытываете трудности?</p>
+                <div class="quiz__progress">
+                    <div class="quiz__progress-bar" id="progress-bar"></div>
+                </div>
+                <div class="quiz__content" id="quiz-content">
+                    <div class="quiz__step active" data-step="1">
+                        <div class="quiz__options-container" id="subjects-container">
+                        </div>
+                        <button type="button" class="quiz__button" id="step1-button">
+                            Далее
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.3172 7.44217L9.69219 13.0672C9.57491 13.1844 9.41585 13.2503 9.25 13.2503C9.08415 13.2503 8.92509 13.1844 8.80781 13.0672C8.69054 12.9499 8.62465 12.7908 8.62465 12.625C8.62465 12.4591 8.69054 12.3001 8.80781 12.1828L13.3664 7.62498L1.125 7.62498C0.95924 7.62498 0.800269 7.55913 0.683058 7.44192C0.565848 7.32471 0.5 7.16574 0.5 6.99998C0.5 6.83422 0.565848 6.67525 0.683058 6.55804C0.800269 6.44083 0.95924 6.37498 1.125 6.37498L13.3664 6.37498L8.80781 1.81717C8.69054 1.69989 8.62465 1.54083 8.62465 1.37498C8.62465 1.20913 8.69054 1.05007 8.80781 0.932794C8.92509 0.815518 9.08415 0.749634 9.25 0.749634C9.41585 0.749634 9.57491 0.815518 9.69219 0.932794L15.3172 6.55779C15.3753 6.61584 15.4214 6.68477 15.4529 6.76064C15.4843 6.83652 15.5005 6.91785 15.5005 6.99998C15.5005 7.08212 15.4843 7.16344 15.4529 7.23932C15.4214 7.31519 15.3753 7.38412 15.3172 7.44217Z" fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+    
+                    <div class="quiz__step" data-step="2">
+                        <div class="quiz__options-container--onecol" id="knowledge-level-container">
+                        </div>
+                        <div class="quiz__button-container">
+                            <button type="button" class="quiz__button quiz__button--back" id="back-to-step1">
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.682812 6.55783L6.30781 0.93283C6.42509 0.815554 6.58415 0.749669 6.75 0.749669C6.91585 0.749669 7.07491 0.815554 7.19219 0.93283C7.30946 1.05011 7.37535 1.20916 7.37535 1.37502C7.37535 1.54087 7.30946 1.69993 7.19219 1.8172L2.63359 6.37502L14.875 6.37502C15.0408 6.37502 15.1997 6.44087 15.3169 6.55808C15.4342 6.67529 15.5 6.83426 15.5 7.00002C15.5 7.16578 15.4342 7.32475 15.3169 7.44196C15.1997 7.55917 15.0408 7.62502 14.875 7.62502L2.63359 7.62502L7.19219 12.1828C7.30946 12.3001 7.37535 12.4592 7.37535 12.625C7.37535 12.7909 7.30946 12.9499 7.19219 13.0672C7.07491 13.1845 6.91585 13.2504 6.75 13.2504C6.58415 13.2504 6.42509 13.1845 6.30781 13.0672L0.682812 7.44221C0.624702 7.38416 0.578603 7.31523 0.54715 7.23936C0.515697 7.16348 0.499509 7.08215 0.499509 7.00002C0.499509 6.91788 0.515697 6.83655 0.54715 6.76068C0.578603 6.68481 0.624702 6.61588 0.682812 6.55783Z" fill="#323231" />
+                                </svg>
+                                Назад
+                            </button>
+                            <button type="button" class="quiz__button" id="step2-button">
+                                Далее
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.3172 7.44217L9.69219 13.0672C9.57491 13.1844 9.41585 13.2503 9.25 13.2503C9.08415 13.2503 8.92509 13.1844 8.80781 13.0672C8.69054 12.9499 8.62465 12.7908 8.62465 12.625C8.62465 12.4591 8.69054 12.3001 8.80781 12.1828L13.3664 7.62498L1.125 7.62498C0.95924 7.62498 0.800269 7.55913 0.683058 7.44192C0.565848 7.32471 0.5 7.16574 0.5 6.99998C0.5 6.83422 0.565848 6.67525 0.683058 6.55804C0.800269 6.44083 0.95924 6.37498 1.125 6.37498L13.3664 6.37498L8.80781 1.81717C8.69054 1.69989 8.62465 1.54083 8.62465 1.37498C8.62465 1.20913 8.69054 1.05007 8.80781 0.932794C8.92509 0.815518 9.08415 0.749634 9.25 0.749634C9.41585 0.749634 9.57491 0.815518 9.69219 0.932794L15.3172 6.55779C15.3753 6.61584 15.4214 6.68477 15.4529 6.76064C15.4843 6.83652 15.5005 6.91785 15.5005 6.99998C15.5005 7.08212 15.4843 7.16344 15.4529 7.23932C15.4214 7.31519 15.3753 7.38412 15.3172 7.44217Z" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="quiz__step" data-step="3">
+                        <div class="quiz__options-container--onecol" id="difficulty-time-container">
+                        </div>
+                        <div class="quiz__button-container">
+                            <button type="button" class="quiz__button quiz__button--back" id="back-to-step2">
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.682812 6.55783L6.30781 0.93283C6.42509 0.815554 6.58415 0.749669 6.75 0.749669C6.91585 0.749669 7.07491 0.815554 7.19219 0.93283C7.30946 1.05011 7.37535 1.20916 7.37535 1.37502C7.37535 1.54087 7.30946 1.69993 7.19219 1.8172L2.63359 6.37502L14.875 6.37502C15.0408 6.37502 15.1997 6.44087 15.3169 6.55808C15.4342 6.67529 15.5 6.83426 15.5 7.00002C15.5 7.16578 15.4342 7.32475 15.3169 7.44196C15.1997 7.55917 15.0408 7.62502 14.875 7.62502L2.63359 7.62502L7.19219 12.1828C7.30946 12.3001 7.37535 12.4592 7.37535 12.625C7.37535 12.7909 7.30946 12.9499 7.19219 13.0672C7.07491 13.1845 6.91585 13.2504 6.75 13.2504C6.58415 13.2504 6.42509 13.1845 6.30781 13.0672L0.682812 7.44221C0.624702 7.38416 0.578603 7.31523 0.54715 7.23936C0.515697 7.16348 0.499509 7.08215 0.499509 7.00002C0.499509 6.91788 0.515697 6.83655 0.54715 6.76068C0.578603 6.68481 0.624702 6.61588 0.682812 6.55783Z" fill="#323231" />
+                                </svg>
+                                Назад
+                            </button>
+                            <button type="button" class="quiz__button" id="step3-button">
+                                Далее
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.3172 7.44217L9.69219 13.0672C9.57491 13.1844 9.41585 13.2503 9.25 13.2503C9.08415 13.2503 8.92509 13.1844 8.80781 13.0672C8.69054 12.9499 8.62465 12.7908 8.62465 12.625C8.62465 12.4591 8.69054 12.3001 8.80781 12.1828L13.3664 7.62498L1.125 7.62498C0.95924 7.62498 0.800269 7.55913 0.683058 7.44192C0.565848 7.32471 0.5 7.16574 0.5 6.99998C0.5 6.83422 0.565848 6.67525 0.683058 6.55804C0.800269 6.44083 0.95924 6.37498 1.125 6.37498L13.3664 6.37498L8.80781 1.81717C8.69054 1.69989 8.62465 1.54083 8.62465 1.37498C8.62465 1.20913 8.69054 1.05007 8.80781 0.932794C8.92509 0.815518 9.08415 0.749634 9.25 0.749634C9.41585 0.749634 9.57491 0.815518 9.69219 0.932794L15.3172 6.55779C15.3753 6.61584 15.4214 6.68477 15.4529 6.76064C15.4843 6.83652 15.5005 6.91785 15.5005 6.99998C15.5005 7.08212 15.4843 7.16344 15.4529 7.23932C15.4214 7.31519 15.3753 7.38412 15.3172 7.44217Z" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="quiz__step" data-step="4">
+                        <div class="quiz__form">
+                            <div class="quiz__form-fields">
+                                <div class="quiz__form-field field">
+                                    <input
+                                            class="field__control"
+                                            id="quizName"
+                                            placeholder=""
+                                            required
+                                    />
+                                    <label for="quizName" class="field__placeholder">
+                                        Имя<span class="field__placeholder-optional"> (обязательно)</span>
+                                    </label>
+                                </div>
+    
+                                <div class="quiz__form-field field">
+                                    <label class="field__label" for="quizPhone">Телефон (обязательно)</label>
+                                    <input
+                                            class="field__control"
+                                            id="quizPhone"
+                                            placeholder="+7"
+                                            required
+                                    />
+                                </div>
+                            </div>
+                            <div class="quiz__form-footer">
+                                <p class="quiz__agreement">Нажимая на кнопку "Отправить", Вы даете согласие на обработку <span>персональных данных</span>.</p>
+
+                                <div class="quiz__button-container">
+                                    <button type="button" class="quiz__button quiz__button--back" id="back-to-step3">
+                                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.682812 6.55783L6.30781 0.93283C6.42509 0.815554 6.58415 0.749669 6.75 0.749669C6.91585 0.749669 7.07491 0.815554 7.19219 0.93283C7.30946 1.05011 7.37535 1.20916 7.37535 1.37502C7.37535 1.54087 7.30946 1.69993 7.19219 1.8172L2.63359 6.37502L14.875 6.37502C15.0408 6.37502 15.1997 6.44087 15.3169 6.55808C15.4342 6.67529 15.5 6.83426 15.5 7.00002C15.5 7.16578 15.4342 7.32475 15.3169 7.44196C15.1997 7.55917 15.0408 7.62502 14.875 7.62502L2.63359 7.62502L7.19219 12.1828C7.30946 12.3001 7.37535 12.4592 7.37535 12.625C7.37535 12.7909 7.30946 12.9499 7.19219 13.0672C7.07491 13.1845 6.91585 13.2504 6.75 13.2504C6.58415 13.2504 6.42509 13.1845 6.30781 13.0672L0.682812 7.44221C0.624702 7.38416 0.578603 7.31523 0.54715 7.23936C0.515697 7.16348 0.499509 7.08215 0.499509 7.00002C0.499509 6.91788 0.515697 6.83655 0.54715 6.76068C0.578603 6.68481 0.624702 6.61588 0.682812 6.55783Z" fill="#323231" />
+                                        </svg>
+                                        Назад
+                                    </button>
+                                    <button type="button" class="quiz__button" id="step4-button">
+                                        Отправить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="quiz__step" data-step="5">
+                        <div class="quiz__success">
+                            <div class="quiz__results">
+                                <h4 class="quiz__results-title">Ваши ответы:</h4>
+                                <div class="quiz__results-content" id="quiz-results-container">
+                                </div>
+                            </div>
+                            
+                            <button type="button" class="quiz__button" id="restart-quiz">
+                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.5 2.25001V6.75001C19.5 6.94892 19.421 7.13969 19.2803 7.28034C19.1397 7.42099 18.9489 7.50001 18.75 7.50001H14.25C14.1016 7.50013 13.9565 7.4562 13.833 7.3738C13.7096 7.2914 13.6134 7.17422 13.5565 7.0371C13.4997 6.89999 13.4849 6.74909 13.5139 6.60353C13.5428 6.45797 13.6144 6.32428 13.7194 6.21939L15.3131 4.62564L14.3241 3.72095L14.3006 3.69845C13.2582 2.65641 11.9318 1.94463 10.4872 1.65202C9.0426 1.35942 7.5438 1.49897 6.17803 2.05323C4.81227 2.60749 3.6401 3.5519 2.80795 4.76848C1.9758 5.98505 1.52057 7.41985 1.49913 8.89364C1.47769 10.3674 1.89098 11.8149 2.68738 13.0551C3.48378 14.2954 4.62798 15.2735 5.97704 15.8673C7.3261 16.461 8.82022 16.6441 10.2727 16.3937C11.7252 16.1432 13.0718 15.4703 14.1441 14.4591C14.2157 14.3914 14.2999 14.3384 14.3919 14.3032C14.484 14.2681 14.5821 14.2514 14.6806 14.2541C14.7791 14.2569 14.8761 14.279 14.966 14.3192C15.056 14.3595 15.1371 14.417 15.2049 14.4886C15.2726 14.5602 15.3255 14.6444 15.3607 14.7365C15.3958 14.8285 15.4125 14.9266 15.4098 15.0251C15.407 15.1236 15.3849 15.2206 15.3447 15.3106C15.3045 15.4005 15.2469 15.4817 15.1753 15.5494C13.5077 17.1285 11.2967 18.006 9.00001 18H8.87626C7.40226 17.9798 5.95579 17.5979 4.66397 16.8877C3.37216 16.1776 2.27455 15.161 1.46762 13.9274C0.660696 12.6937 0.169152 11.2807 0.0361952 9.81259C-0.0967615 8.34447 0.13294 6.86616 0.70511 5.5076C1.27728 4.14903 2.1744 2.95181 3.31762 2.02116C4.46085 1.09051 5.81517 0.45492 7.26155 0.170255C8.70794 -0.11441 10.2021 -0.0394343 11.6127 0.388592C13.0234 0.816619 14.3073 1.58459 15.3516 2.62501L16.3763 3.56251L18.2194 1.71564C18.3245 1.6104 18.4585 1.53879 18.6045 1.50992C18.7504 1.48105 18.9016 1.49622 19.0388 1.5535C19.1761 1.61078 19.2933 1.70759 19.3754 1.83161C19.4575 1.95563 19.5009 2.10127 19.5 2.25001Z" fill="white" />
+                                </svg>
+                                Пройти заново
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img
+                src="./images/quiz.png"
+                alt=""
+                class="quiz__img hidden-tablet"
+                width="373" height="344" loading="lazy"
+            >
+        </div>
+    </section>
+    <section class="subject">
+        <div class="subject__wrapper container">
+            <div class="subject__inner">
+                <div class="subject__header">
+                    <h2 class="subject__title">Чему мы учим?</h2>
+                    <p class="subject__subtitle">Подготовка к ЕГЭ, ОГЭ. Более 50 кабинетов для получения знаний по дисциплинам:</p>
+                </div>
+                <div class="subject__list">
+                    <div class="subject__item subject__item--math">
+                        <img
+                            src="./images/subject/icons/math.svg"
+                            alt="Математика"
+                            class="subject__img"
+                            width="40" height="40" loading="lazy"
+                        >
+                        <span>Математика</span>
+                    </div>
+                    <div class="subject__item subject__item--chemistry">
+                        <img
+                                src="./images/subject/icons/chemistry.svg"
+                                alt="Химия"
+                                class="subject__img"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <span>Химия</span>
+                    </div>
+                    <div class="subject__item subject__item--social">
+                        <img
+                                src="./images/subject/icons/social.svg"
+                                alt="Обществознание"
+                                class="subject__img"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <span>Обществознание</span>
+                    </div>
+                    <div class="subject__item subject__item--algebra">
+                        <img
+                                src="./images/subject/icons/algebra.svg"
+                                alt="Алгебра"
+                                class="subject__img"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <span>Алгебра</span>
+                    </div>
+                    <div class="subject__item subject__item--rus">
+                        <img
+                                src="./images/subject/icons/rus.svg"
+                                alt="Русский язык"
+                                class="subject__img"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <span>Русский язык</span>
+                    </div>
+                    <div class="subject__item subject__item--informatics">
+                        <img
+                                src="./images/subject/icons/informatics.svg"
+                                alt="Информатика"
+                                class="subject__img"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <span>Информатика</span>
+                    </div>
+                    <div class="subject__item subject__item--biology">
+                        <img
+                                src="./images/subject/icons/biology.svg"
+                                alt="Биология"
+                                class="subject__img"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <span>Биология</span>
+                    </div>
+                    <div class="subject__item subject__item--geometry">
+                        <img
+                                src="./images/subject/icons/geometry.svg"
+                                alt="Геометрия"
+                                class="subject__img"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <span>Геометрия</span>
+                    </div>
+                    <div class="subject__item subject__item--physics">
+                        <img
+                                src="./images/subject/icons/physics.svg"
+                                alt="Физика"
+                                class="subject__img"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <span>Физика</span>
+                    </div>
+                    <div class="subject__item subject__item--history">
+                        <img
+                                src="./images/subject/icons/history.svg"
+                                alt="История"
+                                class="subject__img"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <span>История</span>
+                    </div>
+                    <div class="subject__item subject__item--literature">
+                        <img
+                                src="./images/subject/icons/literature.svg"
+                                alt="Литература"
+                                class="subject__img"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <span>Литература</span>
+                    </div>
+                    <div class="subject__item subject__item--geography">
+                        <img
+                                src="./images/subject/icons/geography.svg"
+                                alt="География"
+                                class="subject__img"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <span>География</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="language">
+        <div class="language__wrapper container">
+            <div class="language__inner">
+                <div class="language__main">
+                    <div class="language__header">
+                        <h2 class="language__title">Иностранные языки</h2>
+                        <p class="language__subtitle">Для детей и взрослых, подготовка к IELTS, TOEFL, HSK.</p>
+                    </div>
+                    <div class="language__cards">
+                        <div class="language__item">
+                            <img
+                                    src="./images/language/english.png"
+                                    alt=""
+                                    class="language__img"
+                                    width="28" height="28" loading="lazy"
+                            >
+                            <span>Английский</span>
+                        </div>
+                        <div class="language__item">
+                            <img
+                                    src="./images/language/chinese.png"
+                                    alt=""
+                                    class="language__img"
+                                    width="28" height="28" loading="lazy"
+                            >
+                            <span>Китайский</span>
+                        </div>
+                        <div class="language__item">
+                            <img
+                                    src="./images/language/japanese.png"
+                                    alt=""
+                                    class="language__img"
+                                    width="28" height="28" loading="lazy"
+                            >
+                            <span>Японский</span>
+                        </div>
+                        <div class="language__item">
+                            <img
+                                    src="./images/language/korean.png"
+                                    alt=""
+                                    class="language__img"
+                                    width="28" height="28" loading="lazy"
+                            >
+                            <span>Корейский</span>
+                        </div>
+                        <div class="language__item">
+                            <img
+                                    src="./images/language/spanish.png"
+                                    alt=""
+                                    class="language__img"
+                                    width="28" height="28" loading="lazy"
+                            >
+                            <span>Испанский</span>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <button
+                                type="button"
+                                class="button"
+                                aria-label="Записаться"
+                                title="Записаться"
+                        >
+                            Записаться
+                        </button>
+                        <button
+                                type="button"
+                                class="contact__button"
+                                aria-label="Whatsapp"
+                                title="Whatsapp"
+                        >
+                            <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.329672 27.3709C0.178836 27.2873 0.0655384 27.0969 0.0629899 26.9228C0.0619652 26.8528 0.539406 25.555 1.12397 24.0388L2.18681 21.282L2.01501 20.9859C1.69897 20.4412 1.06904 19.1186 0.872599 18.5873C0.622425 17.9106 0.308415 16.6573 0.187771 15.8539C0.0706529 15.0741 0.0524362 13.0543 0.156006 12.3321C0.602317 9.22013 1.89007 6.59191 4.00509 4.47641C6.11792 2.36311 8.77948 1.05482 11.8328 0.628738C12.489 0.537166 14.5399 0.537166 15.1961 0.628738C19.128 1.17743 22.4714 3.23443 24.6498 6.44499C25.8041 8.14613 26.5074 9.97307 26.8455 12.1482C26.9633 12.9063 26.9777 14.974 26.8702 15.6962C26.4132 18.7668 25.0855 21.4538 23.0015 23.5257C19.7517 26.7565 15.1275 28.0993 10.5978 27.1274C9.45016 26.8812 7.7283 26.1978 6.65641 25.563L6.39365 25.4074L3.55584 26.4235C1.99504 26.9823 0.658907 27.4398 0.586647 27.4401C0.514389 27.4403 0.398749 27.4092 0.329672 27.3709Z" fill="#25D366"/>
+                                <path d="M19.0015 19.4778C18.604 19.8707 18.1972 20.1215 17.6522 20.3095C17.1425 20.4853 16.2317 20.532 15.6905 20.4101C14.4294 20.1259 12.4983 19.1245 10.8459 17.8977C9.2845 16.7385 7.94025 15.0538 6.82111 12.8536C5.95267 11.1463 5.72223 10.0573 5.99973 8.97205C6.30483 7.77885 7.24573 6.79377 8.40615 6.45264C8.61689 6.39069 8.92959 6.36523 9.47992 6.36523C10.1875 6.36523 10.2694 6.3755 10.4035 6.48101C10.4966 6.55424 10.7957 7.0824 11.2176 7.91831L11.8845 9.23982L11.8826 9.70523C11.881 10.1213 11.8603 10.2142 11.6879 10.5814C11.5819 10.8073 11.3322 11.194 11.133 11.4408L10.7709 11.8894L11.0278 12.4017C11.6957 13.7336 12.6808 14.7069 14.0442 15.3817L14.5058 15.6102L14.8195 15.327C15.4817 14.7292 16.141 14.4419 16.758 14.4822C17.1173 14.5056 17.2231 14.5483 18.455 15.1661C19.1776 15.5285 19.8181 15.8797 19.8783 15.9465C19.9749 16.0536 19.9898 16.1595 20.0054 16.8486C20.0217 17.5732 20.0126 17.6603 19.8782 18.0608C19.6888 18.625 19.4126 19.0715 19.0015 19.4778Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="language__photo ">
+                    <img
+                            src="./images/language/students.png"
+                            alt="Ученики"
+                            class="language__img"
+                            width="556" height="332" loading="lazy"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="courses" data-js-courses>
+        <div class="courses__wrapper container">
+            <div class="courses__inner">
+                <h2 class="courses__header">Наши <span>курсы</span></h2>
+                <div class="courses__cards">
+                    <div class="courses__item" data-js-course-card>
+                        <img
+                                src="./images/courses/elementary.svg"
+                                alt=""
+                                class="courses__img courses__img--elementary"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <h4 class="courses__title">Начальные классы</h4>
+                        <p class="courses__description" data-js-course-description>
+                            Работаем по всем основным программам: Планета знаний, 21 век, Школа России, Гармония и другие. Заполняем пробелы, помогаем с ДЗ.
+                        </p>
+                    </div>
+                    <div class="courses__item" data-js-course-card>
+                        <img
+                                src="./images/courses/school.svg"
+                                alt=""
+                                class="courses__img courses__img--school"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <h4 class="courses__title">Школьная программа</h4>
+                        <p class="courses__description" data-js-course-description>
+                            Заполним пробелы прошлых лет,<br> подтянем успеваемость и привьем <br> любовь к учебе.
+                        </p>
+                    </div>
+                    <div class="courses__item" data-js-course-card>
+                        <img
+                                src="./images/courses/preschool.svg"
+                                alt=""
+                                class="courses__img courses__img--preschool"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <h4 class="courses__title">Дошкольное образование</h4>
+                        <p class="courses__description" data-js-course-description>
+                            Занимаемся с детками от 3 лет. Все необходимое для поступления в 1 класс: математика, чтение, письмо, окружающий мир, логика и английский.
+                        </p>
+                    </div>
+                    <div class="courses__item" data-js-course-card>
+                        <img
+                                src="./images/courses/ege.svg"
+                                alt=""
+                                class="courses__img courses__img--ege"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <h4 class="courses__title">Подготовка к ЕГЭ</h4>
+                        <p class="courses__description" data-js-course-description>
+                            В группах (до 5 человек) и индивидуально.<br> Соответствует ФГОС.<br> Усиленная подготовка (дважды в неделю по 1,5ч) для высоких результатов!
+                        </p>
+                    </div>
+                    <div class="courses__item" data-js-course-card>
+                        <img
+                                src="./images/courses/oge.svg"
+                                alt=""
+                                class="courses__img courses__img--oge"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <h4 class="courses__title">Подготовка к ОГЭ</h4>
+                        <p class="courses__description" data-js-course-description>
+                            В группах (до 5 человек) и индивидуально.<br> Соответствует ФГОС.<br> Усиленная подготовка (дважды в неделю по 1,5ч) для высоких результатов!
+                        </p>
+                    </div>
+                    <div class="courses__item" data-js-course-card>
+                        <img
+                                src="./images/courses/languages.svg"
+                                alt=""
+                                class="courses__img courses__img--languages"
+                                width="40" height="40" loading="lazy"
+                        >
+                        <h4 class="courses__title">Иностранные языки</h4>
+                        <p class="courses__description" data-js-course-description>
+                            Английский, китайский, корейский, японский.<br>Морской английский<br>Деловой английский.<br>Подготовка к TOEFL, IELTS; HSK.
+                        </p>
+                    </div>
+                </div>
+                <div class="courses__extra">
+                    <div class="contact">
+                        <button
+                                type="button"
+                                class="button"
+                                aria-label="Записаться"
+                                title="Записаться"
+                        >
+                            Записаться
+                        </button>
+                        <button
+                                type="button"
+                                class="contact__button contact__button--white"
+                                aria-label="Whatsapp"
+                                title="Whatsapp"
+                        >
+                            <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.329672 27.3709C0.178836 27.2873 0.0655384 27.0969 0.0629899 26.9228C0.0619652 26.8528 0.539406 25.555 1.12397 24.0388L2.18681 21.282L2.01501 20.9859C1.69897 20.4412 1.06904 19.1186 0.872599 18.5873C0.622425 17.9106 0.308415 16.6573 0.187771 15.8539C0.0706529 15.0741 0.0524362 13.0543 0.156006 12.3321C0.602317 9.22013 1.89007 6.59191 4.00509 4.47641C6.11792 2.36311 8.77948 1.05482 11.8328 0.628738C12.489 0.537166 14.5399 0.537166 15.1961 0.628738C19.128 1.17743 22.4714 3.23443 24.6498 6.44499C25.8041 8.14613 26.5074 9.97307 26.8455 12.1482C26.9633 12.9063 26.9777 14.974 26.8702 15.6962C26.4132 18.7668 25.0855 21.4538 23.0015 23.5257C19.7517 26.7565 15.1275 28.0993 10.5978 27.1274C9.45016 26.8812 7.7283 26.1978 6.65641 25.563L6.39365 25.4074L3.55584 26.4235C1.99504 26.9823 0.658907 27.4398 0.586647 27.4401C0.514389 27.4403 0.398749 27.4092 0.329672 27.3709Z" fill="#25D366"/>
+                                <path d="M19.0015 19.4778C18.604 19.8707 18.1972 20.1215 17.6522 20.3095C17.1425 20.4853 16.2317 20.532 15.6905 20.4101C14.4294 20.1259 12.4983 19.1245 10.8459 17.8977C9.2845 16.7385 7.94025 15.0538 6.82111 12.8536C5.95267 11.1463 5.72223 10.0573 5.99973 8.97205C6.30483 7.77885 7.24573 6.79377 8.40615 6.45264C8.61689 6.39069 8.92959 6.36523 9.47992 6.36523C10.1875 6.36523 10.2694 6.3755 10.4035 6.48101C10.4966 6.55424 10.7957 7.0824 11.2176 7.91831L11.8845 9.23982L11.8826 9.70523C11.881 10.1213 11.8603 10.2142 11.6879 10.5814C11.5819 10.8073 11.3322 11.194 11.133 11.4408L10.7709 11.8894L11.0278 12.4017C11.6957 13.7336 12.6808 14.7069 14.0442 15.3817L14.5058 15.6102L14.8195 15.327C15.4817 14.7292 16.141 14.4419 16.758 14.4822C17.1173 14.5056 17.2231 14.5483 18.455 15.1661C19.1776 15.5285 19.8181 15.8797 19.8783 15.9465C19.9749 16.0536 19.9898 16.1595 20.0054 16.8486C20.0217 17.5732 20.0126 17.6603 19.8782 18.0608C19.6888 18.625 19.4126 19.0715 19.0015 19.4778Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="" class="courses__extra-text">Пример образовательной программы (физика, ЕГЭ)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="promo">
+        <div class="promo__wrapper container">
+            <div class="promo__inner">
+                <h2 class="promo__header">Акции</h2>
+                <div class="promo__cards">
+                    <div class="promo__item promo__item--discount">
+                        <img
+                                src="./images/promo/discount.svg"
+                                alt=""
+                                class="promo__img promo__img--discount"
+                                width="99" height="99" loading="lazy"
+                        >
+                        <div class="promo__item-header">
+                            <h5 class="promo__item-title">Скидка 10%</h5>
+                            <p class="promo__item-text">за несколько предметов</p>
+                        </div>
+                    </div>
+                    <div class="promo__item promo__item--family">
+                        <img
+                                src="./images/promo/family.svg"
+                                alt=""
+                                class="promo__img promo__img--family"
+                                width="99" height="99" loading="lazy"
+                        >
+                        <div class="promo__item-header">
+                            <h5 class="promo__item-title">Семейные скидки</h5>
+                            <p class="promo__item-text">Родитель + ребёнок, 2 ребёнка</p>
+                        </div>
+                    </div>
+                    <div class="promo__item promo__item--friend">
+                        <img
+                                src="./images/promo/friend.svg"
+                                alt=""
+                                class="promo__img promo__img--friend"
+                                width="99" height="99" loading="lazy"
+                        >
+                        <div class="promo__item-header">
+                            <h5 class="promo__item-title">Приведи друга</h5>
+                            <p class="promo__item-text">и получи 2 000 ₽ в подарок</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <button
+                            type="button"
+                            class="button"
+                            aria-label="Записаться"
+                            title="Записаться"
+                    >
+                        Записаться
+                    </button>
+                    <button
+                            type="button"
+                            class="contact__button"
+                            aria-label="Whatsapp"
+                            title="Whatsapp"
+                    >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.329672 27.3709C0.178836 27.2873 0.0655384 27.0969 0.0629899 26.9228C0.0619652 26.8528 0.539406 25.555 1.12397 24.0388L2.18681 21.282L2.01501 20.9859C1.69897 20.4412 1.06904 19.1186 0.872599 18.5873C0.622425 17.9106 0.308415 16.6573 0.187771 15.8539C0.0706529 15.0741 0.0524362 13.0543 0.156006 12.3321C0.602317 9.22013 1.89007 6.59191 4.00509 4.47641C6.11792 2.36311 8.77948 1.05482 11.8328 0.628738C12.489 0.537166 14.5399 0.537166 15.1961 0.628738C19.128 1.17743 22.4714 3.23443 24.6498 6.44499C25.8041 8.14613 26.5074 9.97307 26.8455 12.1482C26.9633 12.9063 26.9777 14.974 26.8702 15.6962C26.4132 18.7668 25.0855 21.4538 23.0015 23.5257C19.7517 26.7565 15.1275 28.0993 10.5978 27.1274C9.45016 26.8812 7.7283 26.1978 6.65641 25.563L6.39365 25.4074L3.55584 26.4235C1.99504 26.9823 0.658907 27.4398 0.586647 27.4401C0.514389 27.4403 0.398749 27.4092 0.329672 27.3709Z" fill="#25D366"/>
+                                <path d="M19.0015 19.4778C18.604 19.8707 18.1972 20.1215 17.6522 20.3095C17.1425 20.4853 16.2317 20.532 15.6905 20.4101C14.4294 20.1259 12.4983 19.1245 10.8459 17.8977C9.2845 16.7385 7.94025 15.0538 6.82111 12.8536C5.95267 11.1463 5.72223 10.0573 5.99973 8.97205C6.30483 7.77885 7.24573 6.79377 8.40615 6.45264C8.61689 6.39069 8.92959 6.36523 9.47992 6.36523C10.1875 6.36523 10.2694 6.3755 10.4035 6.48101C10.4966 6.55424 10.7957 7.0824 11.2176 7.91831L11.8845 9.23982L11.8826 9.70523C11.881 10.1213 11.8603 10.2142 11.6879 10.5814C11.5819 10.8073 11.3322 11.194 11.133 11.4408L10.7709 11.8894L11.0278 12.4017C11.6957 13.7336 12.6808 14.7069 14.0442 15.3817L14.5058 15.6102L14.8195 15.327C15.4817 14.7292 16.141 14.4419 16.758 14.4822C17.1173 14.5056 17.2231 14.5483 18.455 15.1661C19.1776 15.5285 19.8181 15.8797 19.8783 15.9465C19.9749 16.0536 19.9898 16.1595 20.0054 16.8486C20.0217 17.5732 20.0126 17.6603 19.8782 18.0608C19.6888 18.625 19.4126 19.0715 19.0015 19.4778Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carousel">
+        <div class="carousel__container">
+            <div class="carousel__track">
+                <div class="carousel__slide">
+                    <img src="./images/carousel/IMG_9867.png" alt="Фотография курса" class="carousel__image" loading="lazy">
+                </div>
+                <div class="carousel__slide">
+                    <img src="./images/carousel/IMG_9884.png" alt="Фотография курса" class="carousel__image" loading="lazy">
+                </div>
+                <div class="carousel__slide">
+                    <img src="./images/carousel/IMG_9888.png" alt="Фотография курса" class="carousel__image" loading="lazy">
+                </div>
+                <div class="carousel__slide">
+                    <img src="./images/carousel/IMG_9901.png" alt="Фотография курса" class="carousel__image" loading="lazy">
+                </div>
+                <div class="carousel__slide">
+                    <img src="./images/carousel/IMG_9904.png" alt="Фотография курса" class="carousel__image" loading="lazy">
+                </div>
+                <div class="carousel__slide">
+                    <img src="./images/carousel/IMG_9922.png" alt="Фотография курса" class="carousel__image" loading="lazy">
+                </div>
+                <div class="carousel__slide">
+                    <img src="./images/carousel/IMG_9939.png" alt="Фотография курса" class="carousel__image" loading="lazy">
+                </div>
+                <div class="carousel__slide">
+                    <img src="./images/carousel/IMG_9946.png" alt="Фотография курса" class="carousel__image" loading="lazy">
+                </div>
+                <div class="carousel__slide">
+                    <img src="./images/carousel/IMG_9948.png" alt="Фотография курса" class="carousel__image" loading="lazy">
+                </div>
+                <div class="carousel__slide">
+                    <img src="./images/carousel/IMG_9960.png" alt="Фотография курса" class="carousel__image" loading="lazy">
+                </div>
+                <div class="carousel__slide">
+                    <img src="./images/carousel/IMG_9962.png" alt="Фотография курса" class="carousel__image" loading="lazy">
+                </div>
+                <div class="carousel__slide">
+                    <img src="./images/carousel/IMG_9971.png" alt="Фотография курса" class="carousel__image" loading="lazy">
+                </div>
+                <div class="carousel__slide">
+                    <img src="./images/carousel/IMG_9989.png" alt="Фотография курса" class="carousel__image" loading="lazy">
+                </div>
+                <div class="carousel__slide">
+                    <img src="./images/carousel/IMG_9999.png" alt="Фотография курса" class="carousel__image" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="license">
+        <div class="license__wrapper container">
+            <div class="license__inner">
+                <div class="license__body">
+                    <h2 class="license__header">Лицензия дополнительного образования <span>№ 7-Б/00420</span></h2>
+                    <div class="contact">
+                        <button
+                                type="button"
+                                class="button"
+                                aria-label="Записаться"
+                                title="Записаться"
+                        >
+                            Записаться
+                        </button>
+                        <button
+                                type="button"
+                                class="contact__button"
+                                aria-label="Whatsapp"
+                                title="Whatsapp"
+                        >
+                            <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.329672 27.3709C0.178836 27.2873 0.0655384 27.0969 0.0629899 26.9228C0.0619652 26.8528 0.539406 25.555 1.12397 24.0388L2.18681 21.282L2.01501 20.9859C1.69897 20.4412 1.06904 19.1186 0.872599 18.5873C0.622425 17.9106 0.308415 16.6573 0.187771 15.8539C0.0706529 15.0741 0.0524362 13.0543 0.156006 12.3321C0.602317 9.22013 1.89007 6.59191 4.00509 4.47641C6.11792 2.36311 8.77948 1.05482 11.8328 0.628738C12.489 0.537166 14.5399 0.537166 15.1961 0.628738C19.128 1.17743 22.4714 3.23443 24.6498 6.44499C25.8041 8.14613 26.5074 9.97307 26.8455 12.1482C26.9633 12.9063 26.9777 14.974 26.8702 15.6962C26.4132 18.7668 25.0855 21.4538 23.0015 23.5257C19.7517 26.7565 15.1275 28.0993 10.5978 27.1274C9.45016 26.8812 7.7283 26.1978 6.65641 25.563L6.39365 25.4074L3.55584 26.4235C1.99504 26.9823 0.658907 27.4398 0.586647 27.4401C0.514389 27.4403 0.398749 27.4092 0.329672 27.3709Z" fill="#25D366"/>
+                                <path d="M19.0015 19.4778C18.604 19.8707 18.1972 20.1215 17.6522 20.3095C17.1425 20.4853 16.2317 20.532 15.6905 20.4101C14.4294 20.1259 12.4983 19.1245 10.8459 17.8977C9.2845 16.7385 7.94025 15.0538 6.82111 12.8536C5.95267 11.1463 5.72223 10.0573 5.99973 8.97205C6.30483 7.77885 7.24573 6.79377 8.40615 6.45264C8.61689 6.39069 8.92959 6.36523 9.47992 6.36523C10.1875 6.36523 10.2694 6.3755 10.4035 6.48101C10.4966 6.55424 10.7957 7.0824 11.2176 7.91831L11.8845 9.23982L11.8826 9.70523C11.881 10.1213 11.8603 10.2142 11.6879 10.5814C11.5819 10.8073 11.3322 11.194 11.133 11.4408L10.7709 11.8894L11.0278 12.4017C11.6957 13.7336 12.6808 14.7069 14.0442 15.3817L14.5058 15.6102L14.8195 15.327C15.4817 14.7292 16.141 14.4419 16.758 14.4822C17.1173 14.5056 17.2231 14.5483 18.455 15.1661C19.1776 15.5285 19.8181 15.8797 19.8783 15.9465C19.9749 16.0536 19.9898 16.1595 20.0054 16.8486C20.0217 17.5732 20.0126 17.6603 19.8782 18.0608C19.6888 18.625 19.4126 19.0715 19.0015 19.4778Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <img
+                        src="./images/license/license.png"
+                        alt=""
+                        class="license__img"
+                        width="462" height="393" loading="lazy"
+                >
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="reviews__wrapper container">
+            <div class="reviews__inner">
+                <h2 class="reviews__header">Отзывы</h2>
+                <div class="reviews__body">
+                    <div class="reviews__item">
+                        <div class="reviews__upper">
+                            <h4 class="reviews__name">Иванова Ольга</h4>
+                            <div class="reviews__stars">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="reviews__content">Обратилась к репетитору по математике для подготовки к экзаменам, и осталась очень довольна! Занятия были структурированными и интересными. Репетитор не только объяснял сложные темы доступным языком, но и помогал развивать уверенность в своих силах. Благодаря его поддержке и индивидуальному подходу я значительно улучшила свои знания и результаты. Рекомендую всем, кто хочет получить качественную помощь в учебе!</p>
+                        <time class="reviews__date" datetime="2023-10-07">7 октября 2023 г.</time>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__upper">
+                            <h4 class="reviews__name">Королёв Александр</h4>
+                            <div class="reviews__stars">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="reviews__content">Занималась химией, преподаватель все подробно объяснял, очень нравилось, что на занятиях не только решали типовые задания, но и разбирали какие-то интересные примеры, экзамен сдала на 5, спасибо!</p>
+                        <time class="reviews__date" datetime="2023-10-01">1 октября 2023 г.</time>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__upper">
+                            <h4 class="reviews__name">Лебедев Виктор</h4>
+                            <div class="reviews__stars">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="reviews__content">замечательное место! очень удобное расположение, приемлимые цены. Отдельно хочется выразттб благодарность Максу, готовлюсь с ним к профилю, объясняет очень просто, держит связь с учеником (можно легко обсудить все непонятные моменты), и в целом очень хорошо готовит, с оптимизмом и юмором.) всем рекомендую это место!!</p>
+                        <time class="reviews__date" datetime="2023-09-18">18 сентября 2023 г.</time>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__upper">
+                            <h4 class="reviews__name">Зайцева Анастасия</h4>
+                            <div class="reviews__stars">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="reviews__content">Максим, хороший репетитор по математике! Занятия проходят интересно и комфортно. У репетира хорошо проработаны все уроки. Прекрасно объясняет материал)))</p>
+                        <time class="reviews__date" datetime="2023-09-24">24 сентября 2023 г.</time>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__upper">
+                            <h4 class="reviews__name">Лебедев Виктор</h4>
+                            <div class="reviews__stars">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="reviews__content">Очень хорошее место для подготовки к ЕГЭ. Преподаватели хорошо подходят к ученикам и находят хороший метод обучения, что становится легче. Репетитор по математике очень хорошо объясняет, понятнее чем в школе )) хотя я не особо понимаю математику,но то как он просто это объясняет,то мне становится легче понимать задания , хоть и не с первого раза, но все таки. Он ещё и добрый и всегда поможет если попросить ,и он ещё объяснит понятно. Репетитор по английскому идеально доносит информацию, очень легко и всё понятно. Мне очень нравится ходить на ее занятия, буду скучать когда сдам ЕГЭ. В общем я советую</p>
+                        <time class="reviews__date" datetime="2023-09-18">18 сентября 2023 г.</time>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__upper">
+                            <h4 class="reviews__name">Лебедев Виктор</h4>
+                            <div class="reviews__stars">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.09981 1.38995C8.50165 0.700094 9.49831 0.700094 9.90006 1.38995L12.2292 5.38889L16.7522 6.36833C17.5325 6.53729 17.8405 7.48512 17.3086 8.08045L14.2251 11.5314L14.6912 16.1356C14.7716 16.9299 13.9654 17.5157 13.2348 17.1938L8.99998 15.3276L4.76511 17.1938C4.03455 17.5157 3.22827 16.9299 3.3087 16.1356L3.77487 11.5314L0.691412 8.08045C0.159478 7.48512 0.467453 6.53729 1.24771 6.36833L5.77068 5.38889L8.09981 1.38995Z" fill="#F5B300" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="reviews__content">Очень благодарна центру за хорошую подготовку моего ребёнка к сдаче ЕГЭ по физике. Замечательные преподаватели и руководство, которое отвечает за организацию подготовительного процесса и подбирает удобный график для занятий. Благодаря высоким баллам по экзамену - поступили на бюджет. Спасибо Вам большое!</p>
+                        <time class="reviews__date" datetime="2023-09-18">18 сентября 2023 г.</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="price">
+        <div class="price__wrapper container">
+            <div class="price__inner">
+                <div class="price__header">
+                    <h2 class="price__title">Стоимость</h2>
+                    <p class="price_subtitle">1 000 ₽ в подарок за первое занятие</p>
+                </div>
+                <div class="price__cards">
+                    <div class="price__item">
+                        <h3 class="price__item-title">Индивидуальные занятия</h3>
+                        <p class="price__item-subtitle">Подберем учебный план под ваши цели и задачи</p>
+                        <div class="price__item-value">
+                            <span class="price__item-cost">2 200 ₽</span>
+                            <p class="price__item-time">60 мин.</p>
+                        </div>
+                    </div>
+                    <div class="price__item">
+                        <h3 class="price__item-title">Групповые занятия</h3>
+                        <p class="price__item-subtitle">Группы от 2 до 5 человек формируются по уровню знаний</p>
+                        <div class="price__item-value">
+                            <span class="price__item-cost">1 300 ₽</span>
+                            <p class="price__item-time">60 мин.</p>
+                        </div>
+                    </div>
+                    <div class="price__item">
+                        <h3 class="price__item-title">Онлайн обучение</h3>
+                        <p class="price__item-subtitle">Подготовка к школе по различным предметам для детей от 4 лет!</p>
+                        <div class="price__item-value">
+                            <span class="price__item-cost">1 800 ₽</span>
+                            <p class="price__item-time">60 мин.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <button
+                            type="button"
+                            class="button"
+                            aria-label="Записаться"
+                            title="Записаться"
+                    >
+                        Записаться
+                    </button>
+                    <button
+                            type="button"
+                            class="contact__button"
+                            aria-label="Whatsapp"
+                            title="Whatsapp"
+                    >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.329672 27.3709C0.178836 27.2873 0.0655384 27.0969 0.0629899 26.9228C0.0619652 26.8528 0.539406 25.555 1.12397 24.0388L2.18681 21.282L2.01501 20.9859C1.69897 20.4412 1.06904 19.1186 0.872599 18.5873C0.622425 17.9106 0.308415 16.6573 0.187771 15.8539C0.0706529 15.0741 0.0524362 13.0543 0.156006 12.3321C0.602317 9.22013 1.89007 6.59191 4.00509 4.47641C6.11792 2.36311 8.77948 1.05482 11.8328 0.628738C12.489 0.537166 14.5399 0.537166 15.1961 0.628738C19.128 1.17743 22.4714 3.23443 24.6498 6.44499C25.8041 8.14613 26.5074 9.97307 26.8455 12.1482C26.9633 12.9063 26.9777 14.974 26.8702 15.6962C26.4132 18.7668 25.0855 21.4538 23.0015 23.5257C19.7517 26.7565 15.1275 28.0993 10.5978 27.1274C9.45016 26.8812 7.7283 26.1978 6.65641 25.563L6.39365 25.4074L3.55584 26.4235C1.99504 26.9823 0.658907 27.4398 0.586647 27.4401C0.514389 27.4403 0.398749 27.4092 0.329672 27.3709Z" fill="#25D366"/>
+                            <path d="M19.0015 19.4778C18.604 19.8707 18.1972 20.1215 17.6522 20.3095C17.1425 20.4853 16.2317 20.532 15.6905 20.4101C14.4294 20.1259 12.4983 19.1245 10.8459 17.8977C9.2845 16.7385 7.94025 15.0538 6.82111 12.8536C5.95267 11.1463 5.72223 10.0573 5.99973 8.97205C6.30483 7.77885 7.24573 6.79377 8.40615 6.45264C8.61689 6.39069 8.92959 6.36523 9.47992 6.36523C10.1875 6.36523 10.2694 6.3755 10.4035 6.48101C10.4966 6.55424 10.7957 7.0824 11.2176 7.91831L11.8845 9.23982L11.8826 9.70523C11.881 10.1213 11.8603 10.2142 11.6879 10.5814C11.5819 10.8073 11.3322 11.194 11.133 11.4408L10.7709 11.8894L11.0278 12.4017C11.6957 13.7336 12.6808 14.7069 14.0442 15.3817L14.5058 15.6102L14.8195 15.327C15.4817 14.7292 16.141 14.4419 16.758 14.4822C17.1173 14.5056 17.2231 14.5483 18.455 15.1661C19.1776 15.5285 19.8181 15.8797 19.8783 15.9465C19.9749 16.0536 19.9898 16.1595 20.0054 16.8486C20.0217 17.5732 20.0126 17.6603 19.8782 18.0608C19.6888 18.625 19.4126 19.0715 19.0015 19.4778Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us">
+        <div class="contact-us__wrapper container">
+            <div class="contact-us__inner">
+                <div class="contact-us__body">
+                    <h2 class="contact-us__header">Контакты</h2>
+                    <ul class="contact-us__list contact-us__list--phone">
+                        <li class="contact-us__item">
+                            +7 (914) 704-36-66
+                        </li>
+                        <li class="contact-us__item">
+                            274-36-66
+                        </li>
+                    </ul>
+                    <h3 class="contact-us__subheader">Филиалы</h3>
+                    <ul class="contact-us__list contact-us__list--office">
+                        <li class="contact-us__item">
+                            ул. Русская 59/1
+                        </li>
+                        <li class="contact-us__item">
+                            ул. Светланская 150 стр. 2
+                        </li>
+                        <li class="contact-us__item">
+                            пр-т 100-летия Владивостока 40а
+                        </li>
+                        <li class="contact-us__item">
+                            ул. Адмирала Горшкова 69 (Снеговая Падь)
+                        </li>
+                        <li class="contact-us__item">
+                            ул. Крыгина, 40
+                        </li>
+                    </ul>
+                </div>
+                <form action="/" class="contact-us__form">
+                    <div class="contact-us__form-header">
+                        <h3 class="contact-us__form-title">Оставить заявку</h3>
+                        <p class="contact-us__form-promo">1000 ₽ в подарок на первое занятие</p>
+                    </div>
+                    <div class="contact-us__fields">
+                        <div class="contact-us__cell field">
+                            <input
+                                    class="field__control"
+                                    id="firstName"
+                                    placeholder=""
+                                    required
+                            />
+                            <label for="firstName" class="field__placeholder">
+                                Имя<span class="field__placeholder-optional"> (обязательно)</span>
+                            </label>
+                        </div>
+
+                        <div class="contact-us__cell field">
+                            <label class="field__label" for="phoneNumber">Телефон (обязательно)</label>
+                            <input
+                                    class="field__control"
+                                    id="phoneNumber"
+                                    placeholder="+7"
+                                    required
+                            />
+                        </div>
+                        <div class="contact-us__cell contact-us__cell--wide field">
+                            <input
+                                    class="field__control"
+                                    id="message"
+                                    placeholder=""
+                            />
+                            <label for="message" class="field__placeholder">
+                                Укажите предмет <span class="field__placeholder-optional">(необязательно)</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="contact-us__form-register">
+                        <button
+                                class="contact-us__submit-button button"
+                                type="submit"
+                        >
+                            Записаться
+                        </button>
+                        <p class="contact-us__agreement">Нажимая на кнопку "Записаться", Вы даете согласие на обработку <span>персональных данных.</span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="modal" data-js-course-modal>
+        <div class="modal__overlay" data-js-course-modal-close></div>
+        <div class="modal__container">
+            <button class="modal__close" data-js-course-modal-close>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="modal__content" data-js-course-modal-content></div>
+        </div>
+    </div>
 </main>
+<footer class="footer">
+    <div class="footer__inner container">
+        <div class="footer__body">
+            <a
+                    href=""
+                    class="footer__logo"
+                    aria-label="На главную"
+                    title="На главную"
+            >
+                <img
+                        src="./images/logo.svg"
+                        alt="Учебная империя"
+                        class="footer__logo"
+                        width="237" height="52"
+                >
+            </a>
+            <div class="footer__overlay">
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">Курсы</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link is-active">Цены</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">Акции</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">Отзывы</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">О нас</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+        </div>
+            <div class="footer__img-wrapper">
+                <a href="tel:89147043666" class="footer__contact-link">
+                    +7 (914) 704-36-66
+                </a>
+                <img
+                        class="visible-mobile"
+                        src="./images/whatsapp-gray.svg"
+                        alt=""
+                        width="24" height="24" loading="lazy"
+                >
+            </div>
+        </div>
+        <div class="footer__extra">
+            <p class="footer__company">© 2024 ООО «Учебная империя»</p>
+            <p class="footer__policy">Политика обработки персональных данных</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,98 @@
+@use "../helpers" as *;
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: rem(20);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+
+  &.is-active,
+  &--open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+
+  &__container {
+    position: relative;
+    background-color: var(--color-light);
+    border-radius: rem(24);
+    width: 100%;
+    max-width: rem(450);
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: rem(20);
+    z-index: 1;
+  }
+
+  &__close {
+    position: absolute;
+    top: rem(16);
+    right: rem(16);
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: rem(24);
+    height: rem(24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-dark);
+    transition: color 0.2s;
+
+    @include hover {
+      color: var(--color-red);
+    }
+  }
+
+  &__content {
+    padding-top: rem(20);
+
+    .courses__item {
+      width: 100%;
+      height: auto;
+      background-color: transparent;
+      padding: 0;
+      row-gap: rem(12);
+    }
+    
+    h3 {
+      font-size: rem(24);
+      margin-bottom: rem(12);
+      color: var(--color-dark);
+    }
+    
+    p {
+      font-size: rem(16);
+      color: var(--color-dark-70);
+      margin-bottom: rem(20);
+    }
+  }
+  
+  &--success {
+    .modal__content {
+      padding: rem(40) rem(20) rem(20);
+      text-align: center;
+    }
+  }
+} 

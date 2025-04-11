@@ -1,0 +1,116 @@
+@use "../helpers" as *;
+
+.price{
+  padding: rem(80) 0;
+
+  @include tablet{
+    padding: rem(24) 0;
+  }
+
+  &__inner{
+    position: relative;
+    background-color: var(--color-baige);
+    background: var(--color-baige) url("../../images/price/background.png") no-repeat top;
+    border-radius: rem(80);
+    padding: rem(60) rem(40);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(40);
+
+    &::after{
+      content: '';
+      position: absolute;
+      width: rem(96);
+      height: rem(96);
+      background: url("../../images/price/star.svg") no-repeat;
+      background-size: contain;
+      right: rem(20);
+      top: rem(-40);
+
+      @include tablet{
+        display: none;
+      }
+    }
+
+    @include tablet{
+      padding: rem(24) rem(16);
+      border-radius: rem(32);
+      row-gap: rem(24);
+    }
+  }
+
+  &__header{
+    text-align: center;
+  }
+
+  &__title{
+    font-size: fluid(36,24);
+    font-weight: 900;
+    margin-bottom: rem(8);
+  }
+
+  &__cards{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    column-gap: rem(16);
+
+     @include tablet{
+       flex-direction: column;
+       row-gap: rem(12);
+     }
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: rem(24);
+    background-color: var(--color-light);
+    row-gap: rem(8);
+    border-radius: rem(24);
+    max-width: rem(362);
+
+    @include tablet{
+      padding: rem(24) rem(16);
+    }
+
+    &:first-child{
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        width: rem(50);
+        height: rem(75);
+        background: url("../../images/price/stars.svg") no-repeat;
+        background-size: contain;
+        left: rem(10);
+        bottom:rem(-45);
+
+        @include tablet{
+          top: rem(-160);
+        }
+      }
+    }
+
+
+    &-title{
+      font-size: fluid(20, 16);
+      font-weight: 700;
+    }
+
+    &-subtitle{
+      font-size: fluid(16, 14);
+    }
+    &-cost{
+      font-size: fluid(36, 24);
+      font-weight: 700;
+    }
+
+    &-time{
+      color: var(--color-dark-50);
+      font-size: fluid(16, 14);
+    }
+  }
+}

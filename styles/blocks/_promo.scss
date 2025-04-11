@@ -1,0 +1,91 @@
+@use "../helpers" as *;
+
+.promo{
+  &__inner{
+    padding-block: rem(80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet{
+      padding-top: rem(24);
+      padding-bottom: 0;
+    }
+  }
+  &__header {
+    margin-bottom: rem(24);
+    font-weight: 900;
+    font-size: fluid(36, 24);
+  }
+
+  &__cards {
+    margin-bottom: rem(40);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: rem(16);
+    row-gap: rem(12);
+
+    @include mobile{
+      margin-bottom: rem(24);
+    }
+  }
+
+  &__item{
+    padding: rem(24) rem(40);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(24);
+    border-radius: rem(40);
+    width: rem(389);
+
+    @include mobile{
+      row-gap: rem(16);
+      width: 100%;
+    }
+
+    &--discount{
+      background: #EDD0BE url("../../images/promo/discount-bg.png") no-repeat;
+    }
+
+    &--family{
+      background: #D7BBF8 url("../../images/promo/family-bg.png") top no-repeat;
+    }
+
+    &--friend{
+      background: #FEDA79 url("../../images/promo/friend-bg.png") top no-repeat;
+      background-position: center 16px;
+    }
+
+    &-header{
+      text-align: center;
+    }
+
+    &-title{
+      font-size: rem(16);
+      font-weight: 900;
+      margin-bottom: rem(8);
+    }
+
+    &-text{
+      font-size: rem(14);
+    }
+  }
+
+  &__img{
+    background-color: var(--color-light);
+    border-radius: rem(27);
+    padding: rem(12);
+
+    @include mobile{
+      padding: rem(7);
+      width: rem(60);
+      aspect-ratio: 1;
+    }
+
+    &--discount{border-top-left-radius: 0}
+    &--family{border-top-right-radius: 0}
+    &--friend{border-bottom-right-radius: 0}
+  }
+}

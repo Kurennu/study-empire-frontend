@@ -1,0 +1,30 @@
+@use "../helpers" as *;
+
+.contact{
+  display: flex;
+  gap: rem(12);
+  align-items: center;
+
+  @include mobile{
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__button{
+    border-radius: rem(24);
+    padding: rem(14);
+    background-color: var(--color-baige);
+    border: none;
+    line-height: normal;
+
+    &--white{
+      background-color: var(--color-light);
+    }
+
+    @include hover{
+      background-color:  #f2f0ec;
+    }
+  }
+
+
+}

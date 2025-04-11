@@ -11,5 +11,9 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.86.1"
+  },
+  "dependencies": {
+    "masonry-layout": "^4.2.2",
+    "swiper": "^11.2.6"
   }
 }

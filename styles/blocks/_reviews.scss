@@ -1,0 +1,138 @@
+@use "../helpers" as *;
+
+.reviews {
+  padding-top: rem(40);
+
+  @include tablet {
+    padding-block: rem(40);
+  }
+
+  &__inner {
+    @include tablet {
+      padding: rem(20) 0;
+    }
+  }
+
+  &__header {
+    text-align: center;
+    font-size: fluid(36, 24);
+    font-weight: 900;
+    margin-bottom: rem(32);
+  }
+
+  &__grid {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(12);
+    
+    @include mobile {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding-left: rem(16);
+      padding-right: rem(16);
+      padding-bottom: rem(12);
+      margin: 0 rem(-16);
+      width: auto;
+      gap: rem(16);
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  &__sizer {
+    width: calc(33.333% - rem(8));
+
+    @include tablet {
+      width: calc(50% - rem(6));
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__item {
+    width: calc(33.333% - rem(8));
+    margin-bottom: rem(12);
+    padding: rem(24);
+    background-color: var(--color-baige);
+    border-radius: rem(24);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+
+    @include tablet {
+      width: calc(50% - rem(6));
+    }
+
+    @include mobile {
+      width: rem(283);
+      min-width: rem(283);
+      height: rem(246);
+      margin-bottom: 0;
+      margin-right: 0;
+      flex-shrink: 0;
+      
+      &:first-child {
+        margin-left: 0;
+      }
+      
+      &:last-child {
+        padding-right: 0;
+        margin-right: rem(16);
+      }
+    }
+  }
+
+  &__upper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: rem(12);
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: rem(16);
+    margin-bottom: rem(4);
+  }
+
+  &__stars {
+    display: flex;
+    gap: rem(4);
+  }
+
+  &__content {
+    font-size: rem(14);
+    line-height: 1.5;
+    margin-bottom: rem(12);
+    color: var(--color-dark-80);
+    
+    @include mobile {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__read-more {
+    font-size: rem(14);
+    text-decoration: none;
+    display: inline;
+    white-space: nowrap;
+    
+  }
+
+  &__date {
+    font-size: rem(12);
+    color: var(--color-dark-50);
+  }
+}

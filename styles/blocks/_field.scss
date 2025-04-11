@@ -1,0 +1,51 @@
+@use "../helpers" as *;
+
+.field{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(2);
+
+  &__placeholder{
+    position: absolute;
+    pointer-events: none;
+    font-size: fluid(16,13);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s;
+
+    &-optional {
+      color: var(--color-dark-70);
+    }
+  }
+
+  &__label{
+    font-size: rem(14);
+    color: var(--color-dark-70);
+  }
+
+  &__control{
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--color-dark);
+    width: 100%;
+
+
+    
+    &--error {
+      border-bottom: 2px solid var(--color-red);
+
+    }
+  }
+
+  &__required-star {
+    color: var(--color-red);
+  }
+  
+  &__error {
+    color: var(--color-red);
+    font-size: rem(12);
+    margin-top: rem(4);
+  }
+}

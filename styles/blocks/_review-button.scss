@@ -1,0 +1,19 @@
+@use "../helpers" as *;
+
+.review-button{
+  border: none;
+  background-color: transparent;
+  display: inline-flex;
+  column-gap: rem(8);
+  align-items: center;
+  padding: rem(8);
+  border-radius: rem(16);
+  border: 1px solid transparent;
+  font-weight: 600;
+  font-size: rem(16);
+
+  @include hover{
+    border-color: var(--color-gray);
+    background-color: #faf9f4;
+  }
+}

@@ -1,0 +1,110 @@
+@use "../helpers" as *;
+
+.subject{
+  padding: rem(40) 0;
+
+  @include tablet{
+    padding: 0;
+  }
+
+  &__inner{
+    background-color: var(--color-baige);
+    border-radius: rem(80);
+    padding: rem(60) rem(80);
+
+    @include tablet{
+      padding: rem(24) rem(16);
+      border-radius: rem(32);
+    }
+  }
+
+  &__header{
+    text-align: center;
+    margin-bottom: rem(40);
+
+    @include tablet{
+      margin-bottom: rem(24);
+    }
+  }
+
+  &__title{
+    font-weight: 900;
+    font-size: fluid(36, 24);
+    position: relative;
+    line-height: 1.4;
+
+    @include tablet{
+      margin-bottom: rem(8);
+    }
+
+    @include mobile-above{
+      &::after{
+        content: '';
+        position: absolute;
+        background: url("../../images/subject/yellow-line.png");
+        width: rem(110);
+        height: rem(44);
+        margin-left: rem(10);
+        margin-top: rem(5);
+      }
+    }
+  }
+
+  &__subtitle{
+    font-size: fluid(18,14);
+  }
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    row-gap: rem(16);
+    column-gap: rem(16);
+    justify-content: center;
+
+    @include tablet{
+      row-gap: rem(12);
+      column-gap: rem(12);
+    }
+  }
+
+  &__item{
+    padding: rem(24);
+    display: flex;
+    column-gap: rem(16);
+    align-items: center;
+    background-color: var(--color-light);
+    border-radius: rem(24);
+    font-size: fluid(16, 14);
+    width: rem(248);
+
+    @include tablet{
+      text-align: center;
+      flex-direction: column;
+      width: rem(142);
+      height: rem(106);
+      row-gap: rem(16);
+      padding: rem(16) rem(24);
+    }
+
+    &--math{background: var(--color-light) url("../../images/subject/background/math.png") no-repeat center / cover }
+    &--chemistry{background: var(--color-light) url("../../images/subject/background/chemistry.png")  no-repeat center / cover}
+    &--social{background: var(--color-light) url("../../images/subject/background/social.png")  no-repeat center / cover}
+    &--algebra{background: var(--color-light) url("../../images/subject/background/algebra.png")  no-repeat center / cover}
+    &--rus{background: var(--color-light) url("../../images/subject/background/rus.png")  no-repeat center / cover}
+    &--informatics{background: var(--color-light) url("../../images/subject/background/informatics.png")  no-repeat center / cover}
+    &--biology{background: var(--color-light) url("../../images/subject/background/biology.png") no-repeat center / cover}
+    &--geometry{background: var(--color-light) url("../../images/subject/background/geometry.png") no-repeat center / cover}
+    &--physics{background: var(--color-light) url("../../images/subject/background/physics.png") no-repeat center / cover}
+    &--history{background: var(--color-light) url("../../images/subject/background/history.png") no-repeat center / cover}
+    &--literature{background: var(--color-light) url("../../images/subject/background/literature.png") no-repeat center / cover}
+    &--geography{background: var(--color-light) url("../../images/subject/background/geography.png") no-repeat center / cover}
+  }
+
+  &__img{
+    padding: 8px;
+    background-color: var(--color-red);
+    box-shadow: 0 12px 16px 0 rgba(225, 59, 34, 0.32);
+    border-radius: rem(12);
+  }
+}

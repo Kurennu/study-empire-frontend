@@ -1,0 +1,203 @@
+@use "../helpers" as *;
+
+.features{
+  &__inner{
+    padding: rem(80) 0;
+    display: grid;
+    grid-template-columns: 47% auto;
+    gap: rem(60);
+
+    @include tablet{
+      grid-template-columns: 1fr;
+      align-items: center;
+      gap: rem(16);
+      padding-top: rem(24);
+      padding-bottom: 0;
+    }
+  }
+
+  &__main{
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(16);
+
+    @include tablet{
+      order: 1;
+      align-items: center;
+    }
+    @include mobile-s{
+      align-items: flex-start;
+    }
+  }
+
+  &__photo{
+    display: inline-flex;
+    justify-content: center;
+    @include laptop{
+      align-items: center;
+    }
+
+    @include tablet{
+      order: 2;
+    }
+
+    @include mobile{
+      img{
+        min-width: rem(290);
+        min-height: auto;
+      }
+    }
+  }
+  
+  &__body{
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(24);
+
+    @include tablet{
+      display: contents;
+    }
+  }
+
+  &__header{
+    font-size: fluid(36, 20);
+    text-align: left;
+
+    span{
+      position: relative;
+
+      @include mobile-above{
+        &::after{
+          position: absolute;
+          content: "";
+          width: rem(139);
+          height: rem(58);
+          background: url("../../images/features/redline.png");
+          left: -23px;
+          z-index: -100;
+        }
+      }
+    }
+  }
+
+  &__info{
+    font-size: fluid(16,14);
+    line-height: 1.375;
+    width: 80%;
+
+    @include mobile-s{
+      width: 100%;
+    }
+  }
+
+  &__metrics{
+    padding-top: rem(12);
+
+    &-list{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: rem(60);
+
+      @include laptop{
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(16);
+      }
+
+      @include tablet{
+        justify-items: center;
+        text-align: center;
+      }
+
+      @include mobile-s{
+        gap: 0;
+      }
+
+
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(4);
+
+      &:last-child{
+        width: rem(99);
+      }
+
+      @include tablet{
+        align-items: center;
+      }
+    }
+
+    &-key{
+      font-weight: 900;
+      font-size: fluid(24, 18);
+    }
+
+    &-value{
+      color: var(--color-dark-50);
+      font-size: rem(14);
+
+    }
+  }
+
+  &__reviews{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid var(--color-gray);
+    padding-top: rem(16);
+
+    @include tablet{
+      flex-direction: column;
+      align-items: center;
+      order: 3;
+    }
+
+    @include mobile-s{
+      align-items: start;
+    }
+
+    &-info{
+      max-width: 30%;
+      font-size: rem(14);
+
+      @include tablet{
+        max-width: 100%;
+        row-gap: rem(8);
+      }
+    }
+  }
+
+  &__extra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet{
+      order: 4;
+      justify-content: center;
+      column-gap: rem(48);
+      margin-top: rem(8);
+    }
+
+    @include mobile{
+      flex-direction: column;
+      row-gap: rem(16);
+    }
+
+    &-text{
+      font-size: rem(14);
+      position: relative;
+
+      &::before{
+        position: absolute;
+        content: '';
+        width: rem(17);
+        height: rem(19);
+        background: url("../../images/features/document.svg");
+        left: -22px;
+      }
+    }
+  }
+}

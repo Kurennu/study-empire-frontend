@@ -1,0 +1,152 @@
+@use "../helpers" as *;
+
+.courses{
+  background-color: var(--color-baige);
+  background: var(--color-baige) url("../../images/courses/background.png") no-repeat top;
+
+  @include mobile{
+    background-size: contain;
+    background-position: center 33px;
+  }
+
+  &__inner{
+    padding: rem(80) 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(40);
+
+    @include tablet{
+      padding: rem(24) 0;
+      row-gap: rem(24);
+    }
+  }
+
+  &__header{
+    font-size: rem(36);
+    font-weight: 900;
+    line-height: 1.4;
+    text-align: center;
+    
+    span{
+      position: relative;
+
+      &::after{
+        position: absolute;
+        content: '';
+        width: rem(148);
+        height: rem(21);
+        background: url("../../images/courses/yellow-line.svg") no-repeat;
+        background-size: contain;
+        bottom: rem(-10);
+        right: 0;
+
+        @include mobile{
+          width: rem(105);
+          height: rem(16);
+          right: rem(-10);
+        }
+    }
+    }
+
+    @include tablet{
+      font-size: rem(24);
+    }
+  }
+
+  &__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: rem(16);
+
+    @include tablet{
+      column-gap: rem(12);
+    }
+  }
+
+  &__item{
+    background-color: var(--color-light);
+    border-radius: rem(40);
+    padding: rem(24);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(16);
+    width: rem(389);
+    height: auto;
+
+    @include tablet{
+      row-gap: rem(12);
+      width: rem(350);
+    }
+
+    @include mobile{
+      align-items: center;
+      text-align: center;
+      padding: rem(16) rem(12);
+      border-radius: rem(24);
+      width: rem(158);
+    }
+  }
+
+  &__img{
+    --background: transparent;
+    background-color: var(--background);
+    border-radius: rem(12);
+    padding: rem(8);
+    box-shadow: 0 12px 16px 0 color-mix(in srgb, var(--background) 32%, transparent);
+
+    &--elementary{--background: #9847FF}
+    &--school{--background: #47FF78}
+    &--preschool{--background: #d747ff}
+    &--ege{--background: #47bfff}
+    &--oge{--background: #477bff}
+    &--languages{--background: #ff7e47}
+  }
+
+  &__title{
+    font-size: fluid(16, 14);
+    font-weight: 900;
+
+    @include mobile{
+      font-weight: 600;
+    }
+  }
+
+  &__description{
+    font-size: rem(14);
+    line-height: 1.4;
+    
+    @include mobile{
+      &.is-collapsed {
+        cursor: pointer;
+    
+        @include hover {
+          color: var(--color-red);
+        }
+      }
+    }
+  }
+
+  &__extra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(16);
+
+    &-text{
+      font-size: rem(14);
+      text-align: left;
+      position: relative;
+      margin-left: rem(22);
+
+      &::before{
+        position: absolute;
+        content: '';
+        width: rem(17);
+        height: rem(19);
+        background: url("../../images/features/document.svg");
+        left: -22px;
+      }
+    }
+  }
+}

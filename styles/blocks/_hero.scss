@@ -9,10 +9,11 @@
     grid-template-columns: 56% auto;
     gap: 1rem;
     align-items: center;
-    background: url("../../images/hero-bg.png") right no-repeat;
+    background: url("../../images/hero/hero-bg.png") right no-repeat;
 
     @include tablet{
-      padding-block: rem(24);
+      padding-top: rem(24);
+      padding-bottom: rem(18);
     }
 
     @include mobile {

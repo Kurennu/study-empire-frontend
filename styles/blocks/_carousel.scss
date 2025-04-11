@@ -1,0 +1,40 @@
+@use "../helpers" as *;
+
+.carousel {
+  padding-bottom: rem(80);
+  background-color: var(--color-light);
+  overflow: hidden;
+
+  @include tablet {
+    padding-block: rem(40)
+  }
+
+  &__container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__track {
+    display: flex;
+    gap: rem(8);
+    will-change: transform;
+  }
+
+  &__slide {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+
+  &__image {
+    max-height: rem(212);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: rem(24);
+    display: block;
+  }
+}

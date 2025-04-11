@@ -1,0 +1,63 @@
+@use "../helpers" as *;
+
+.license{
+  padding: rem(80) 0;
+
+  @include tablet{
+    padding-top: rem(45);
+    padding-bottom: 0;
+  }
+
+  &__inner{
+    background-color: var(--color-baige);
+    background: var(--color-baige) url("../../images/license/background.png") top no-repeat;
+    border-radius: rem(80);
+    padding: rem(60) rem(80);
+    display: flex;
+    align-items: center;
+
+    height: rem(304);
+
+    @include tablet{
+      padding: rem(24) rem(26);
+      border-radius: rem(32);
+      flex-direction: column-reverse;
+      background: var(--color-baige) url("../../images/license/background-mobile.png") no-repeat;
+    }
+  }
+
+  &__body{
+    display: flex;
+    flex-direction: column;
+
+    @include tablet{
+      align-items: center;
+    }
+  }
+
+  &__header{
+    font-size: fluid(36,16);
+    margin-bottom: rem(24);
+
+    @include mobile{
+      text-align: center;
+    }
+
+    span{
+      text-decoration: underline;
+    }
+  }
+
+  &__img{
+    position: relative;
+    top: rem(-50);
+    right: rem(-50);
+
+    @include tablet{
+      width: rem(265);
+      height: auto;
+      top: 10px;
+      right: 0;
+    }
+  }
+}

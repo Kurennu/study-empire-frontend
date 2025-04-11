@@ -1,0 +1,100 @@
+@use "../helpers" as *;
+
+.language{
+    &__inner{
+      padding: rem(80) 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+
+      @include  tablet{
+        justify-content: center;
+        padding: rem(40) 0;
+      }
+  }
+
+  &__main{
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(40);
+    max-width: 50%;
+
+    @include tablet{
+      row-gap: rem(24);
+      max-width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__header{
+    text-align: left;
+
+    @include tablet{
+      text-align: center;
+    }
+  }
+
+  &__title{
+    font-size: rem(36);
+    font-weight: 900;
+    position: relative;
+
+    @include tablet{
+      margin-bottom: rem(8);
+      font-size: rem(24);
+    }
+
+    &::after{
+      position: absolute;
+      content: '';
+      width: rem(249);
+      height: rem(15);
+      background: url("../../images/language/red-line.svg");
+      background-size: contain;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include tablet{
+        transform: translateX(10%);
+        width: rem(133);
+        height: rem(8);
+      }
+    }
+  }
+
+  &__subtitle{
+    font-size: fluid(18, 14);
+  }
+
+  &__cards{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: rem(12);
+    column-gap: rem(12);
+    align-items: center;
+
+    @include tablet{
+      justify-content: center;
+    }
+
+    @include tablet{
+      justify-content: start;
+    }
+
+  }
+
+  &__item{
+    display: flex;
+    column-gap: rem(16);
+    background-color: var(--color-baige);
+    padding: rem(8) rem(12);
+    border-radius: rem(30);
+  }
+
+  &__photo{
+    @include tablet{
+      display: none;
+    }
+  }
+}

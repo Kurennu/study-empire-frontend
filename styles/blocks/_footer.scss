@@ -1,0 +1,128 @@
+@use "../helpers" as *;
+
+.footer{
+  &__inner{
+    padding-top: rem(80);
+    padding-bottom: rem(40);
+    font-weight: 600;
+    font-size: rem(14);
+
+    @include mobile{
+      padding-top: 0;
+      padding-bottom: rem(24);
+    }
+  }
+
+  &__body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: rem(24);
+    border-bottom: 1px solid var(--color-gray);
+
+    @include tablet{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__overlay{
+    @include tablet{
+      width: 100%;
+      margin-bottom: rem(24);
+    }
+  }
+
+  &__logo{
+    @include mobile{
+      width: 147px;
+      height: 40px;
+    }
+  }
+
+  &__menu{
+    @include mobile{
+      overflow-y: auto;
+      width: 100%;
+      display: grid;
+      row-gap: rem(24);
+    }
+
+    &-list{
+      display: flex;
+      align-items: center;
+      column-gap: rem(24);
+      color: var(--color-dark-70);
+
+      @include laptop{
+        column-gap: rem(16);
+      }
+
+      @include mobile{
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: rem(8);
+      }
+    }
+    &-item{
+      @include mobile{
+        position: relative;
+        width: 100%;
+        background-color: var(--color-baige);
+        border-radius: rem(12);
+        padding: rem(12);
+
+        &::after{
+          position: absolute;
+          right: rem(12);
+          content: "";
+          width: 16px;
+          height: 16px;
+          background: url("../../images/arrow-right.svg");
+        }
+
+        @include hover{
+          color: var(--color-red);
+          transition-duration: var(--transition-duration);
+        }
+      }
+    }
+
+
+  }
+
+  &__contact-link{
+    font-size: rem(16);
+  }
+
+  &__img-wrapper{
+    @include mobile{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+  }
+
+  &__extra{
+    padding-top: rem(24);
+    width: 100%;
+    font-size: rem(14);
+    color: var(--color-dark-70);
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet{
+      padding-top: rem(16);
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__company{
+    @include mobile{
+      padding-top: rem(16);
+    }
+  }
+
+}
