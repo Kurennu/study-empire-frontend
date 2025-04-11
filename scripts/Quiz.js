@@ -167,7 +167,7 @@ class Quiz {
         if (!parent) return;
         
         const errorElement = document.createElement('div');
-        errorElement.className = 'field__error';
+        errorElement.className = 'field__error-quiz';
         errorElement.textContent = message;
         
         input.classList.add('field__control--error');
@@ -180,7 +180,7 @@ class Quiz {
         const parent = input.closest('.field');
         if (!parent) return;
         
-        const errorElement = parent.querySelector('.field__error');
+        const errorElement = parent.querySelector('.field__error-quiz');
         if (errorElement) errorElement.remove();
         
         input.classList.remove('field__control--error');

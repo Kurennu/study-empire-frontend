@@ -269,23 +269,3 @@
     }
   }
 }
-
-
-
-.field__error {
-  position: absolute;
-  color: var(--color-red);
-  font-size: 12px;
-  margin-top: 4px;
-  left: 0;
-  bottom: -20px;
-}
-
-.field__control--error {
-  border-color: var(--color-red) !important;
-  
-  &:focus {
-    border-color: var(--color-red) !important;
-    box-shadow: 0 0 0 2px rgba(255, 59, 48, 0.25) !important;
-  }
-}

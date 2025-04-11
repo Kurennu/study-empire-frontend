@@ -1,19 +1,28 @@
 {
   "name": "study-empire-frontend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-watch": "sass --watch ."
+    "start": "npx live-server --port=3000",
+    "scss": "sass --watch styles:styles",
+    "dev": "concurrently \"npm run start\" \"npm run scss\"",
+    "build:scss": "sass styles:styles --style compressed",
+    "build": "npm run build:scss && mkdir -p dist && cp -r index.html styles scripts images dist/",
+    "build:win": "npm run build:scss && (if not exist dist mkdir dist) && xcopy index.html dist\\ /Y && xcopy styles dist\\styles\\ /E /I /Y && xcopy scripts dist\\scripts\\ /E /I /Y && xcopy images dist\\images\\ /E /I /Y"
   },
+  "keywords": [
+    "education",
+    "quiz",
+    "study"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.86.1"
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2",
+    "sass": "^1.69.5"
   },
   "dependencies": {
-    "masonry-layout": "^4.2.2",
-    "swiper": "^11.2.6"
+    "masonry-layout": "^4.2.2"
   }
 }

@@ -31,12 +31,15 @@
     border-bottom: 2px solid var(--color-dark);
     width: 100%;
 
-
-    
     &--error {
-      border-bottom: 2px solid var(--color-red);
-
+      border-color: var(--color-red) !important;
+      
+      &:focus {
+        border-color: var(--color-red) !important;
+        box-shadow: 0 0 0 2px rgba(255, 59, 48, 0.25) !important;
+      }
     }
+
   }
 
   &__required-star {
@@ -44,8 +47,20 @@
   }
   
   &__error {
+    position: absolute;
     color: var(--color-red);
-    font-size: rem(12);
-    margin-top: rem(4);
+    font-size: 12px;
+    margin-top: 4px;
+    left: 0;
+    bottom: rem(-38);
+  }
+
+  &__error-quiz {
+    position: absolute;
+    color: var(--color-red);
+    font-size: 12px;
+    margin-top: 4px;
+    left: 0;
+    bottom: rem(-20);
   }
 }
